@@ -7,6 +7,8 @@ public class Car
     private int numberOfWheels;
     private double price;
 
+
+
     //Constructor
     public Car(String color, int numberOfWheels, double price)
     {
@@ -41,6 +43,11 @@ public class Car
     {
         this.price = newPrice;
         return;
+    }
+
+    public void setNumberOfWheels(int numberOfWheels)
+    {
+        this.numberOfWheels = numberOfWheels;
     }
 
 
