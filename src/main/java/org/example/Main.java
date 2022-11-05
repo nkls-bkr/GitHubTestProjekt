@@ -7,5 +7,6 @@ public class Main {
 
         Car FordFiesta = new Car("silver", 4,3434.99);
         System.out.println("Your car is colored in " + FordFiesta.getColor() + ".");
+        CarParkManager.cars.add(new Car("red", 4, 3000));
     }
 }
