@@ -1,54 +1,52 @@
 package org.example;
 
-public class Car
-{
+public class Car {
     //Main variable of the class
+    private String serialNumber;
+    private String name;
     private String color;
-    private int numberOfWheels;
     private double price;
 
 
-
     //Constructor
-    public Car(String color, int numberOfWheels, double price)
-    {
+    public Car(String serialNumber, String name, String color, double price) {
+        this.serialNumber = serialNumber;
+        this.name = name;
         this.color = color;
-        this.numberOfWheels = numberOfWheels;
         this.price = price;
     }
-    //Getter
-    public int getNumberOfWheels()
-    {
-        return this.numberOfWheels;
+
+    public String getSerialNumber() {
+        return serialNumber;
     }
 
-    public double getPrice()
-    {
-        return this.price;
+    public void setSerialNumber(String serialNumber) {
+        this.serialNumber = serialNumber;
     }
 
-    public String getColor()
-    {
-        return this.color;
+    public String getName() {
+        return name;
     }
 
-    //Setter
-    public void setColor(String newColor)
-    {
-        this.color = newColor;
-        return;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setPrice(double newPrice)
-    {
-        this.price = newPrice;
-        return;
+    public String getColor() {
+        return color;
     }
 
-    public void setNumberOfWheels(int numberOfWheels)
-    {
-        this.numberOfWheels = numberOfWheels;
+    public void setColor(String color) {
+        this.color = color;
     }
 
+    public double getPrice() {
+        return price;
+    }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
+
+

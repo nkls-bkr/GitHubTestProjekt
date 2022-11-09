@@ -7,7 +7,14 @@
     <groupId>org.example</groupId>
     <artifactId>GitHubTestProjekt</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.nrinaudo</groupId>
+            <artifactId>kantan.csv-opencsv_2.12</artifactId>
+            <version>0.1.17</version>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>

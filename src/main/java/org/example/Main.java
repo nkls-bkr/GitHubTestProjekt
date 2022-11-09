@@ -1,12 +1,25 @@
 package org.example;
 
-public class Main {
-    public static void main(String[] args)
-    {
-        System.out.println("Hello world!");
+import com.opencsv.CSVReader;
 
-        Car FordFiesta = new Car("silver", 4,3434.99);
-        System.out.println("Your car is colored in " + FordFiesta.getColor() + ".");
-        CarParkManager.cars.add(new Car("red", 4, 3000));
+import java.io.FileReader;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) throws Exception {
+        CarParkManager.writeCSVValuesIntoObjects(CarParkManager.readCSVwithCars());
+        printAllCars();
+    }
+
+    public static void printAllCars()
+    {
+        for(int i=0;i<CarParkManager.listOfCarObjects.size();i++)
+        {
+            System.out.println(CarParkManager.listOfCarObjects.get(i).getName());
+        }
+        System.out.println("**End of list**");
     }
 }
